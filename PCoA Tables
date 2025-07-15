@@ -1,0 +1,210 @@
+Start with an R markdown file and copy and paste
+
+email me at mfoulkes@stanford.edu if you have troubles
+
+
+### Figure 2) Whole Dataset PCoA
+
+```{r}
+library(RColorBrewer)
+pcoa_data <- read.csv("~/Downloads/full_data_pcoa.csv") #csv from the raw MzMine output can be found in this repository
+pcoa_data <- pcoa_data %>% select(-Feature)
+pcoa_data <- pcoa_data + 1 #add 1 so the zeroes don't give us troubles. Peak values are large enough that this is negligible
+data_t <- t(pcoa_data)
+
+#Scale to standardize euclidean distances
+data_t <- scale(data_t)
+dist_matrix <- dist(data_t, method = "euclidean")
+
+pcoa_result <- cmdscale(dist_matrix, k = 2, eig = TRUE)
+
+#Get eig values to find variation explained and use as axis labels
+eig_vals <- pcoa_result$eig
+var_explained <- eig_vals / sum(eig_vals)
+x_label <- paste0("(", round(100 * var_explained[1], 1), "%)")
+y_label <- paste0("(", round(100 * var_explained[2], 1), "%)")
+
+#Make data frame for plotting
+pcoa_df <- data.frame(
+  Sample = rownames(pcoa_result$points),
+  Axis1 = pcoa_result$points[, 1],
+  Axis2 = pcoa_result$points[, 2])
+
+#Make labels pretty to group replicates in the Key
+pcoa_df <- pcoa_df %>% mutate("Sample Type"= case_when(
+   Sample == "mixed_host1" ~ "Both Bacteria + Host",
+    Sample == "mixed_host2" ~ "Both Bacteria + Host",
+    Sample == "mixed_host3" ~ "Both Bacteria + Host",
+    Sample == "mixed_innate1" ~ "Both Bacteria + DOM",
+    Sample == "mixed_innate2" ~ "Both Bacteria + DOM",
+    Sample == "mixed_innate3" ~ "Both Bacteria + DOM",
+    Sample == "white_host1" ~ "Curvibacter sp. + Host",
+    Sample == "white_host2" ~ "Curvibacter sp. + Host",
+    Sample == "white_host3" ~ "Curvibacter sp. + Host",
+    Sample == "pink_host1" ~ "Falsiroseomonas sp. + Host",
+    Sample == "pink_host2" ~ "Falsiroseomonas sp. + Host",
+    Sample == "pink_host3" ~ "Falsiroseomonas sp. + Host",
+    Sample == "white_innate1" ~ "Curvibacter sp. + DOM",
+    Sample == "white_innate2" ~ "Curvibacter sp. + DOM",
+    Sample == "white_innate3" ~ "Curvibacter sp. + DOM",
+    Sample == "pink_innate1" ~ "Falsiroseomonas sp. + DOM",
+    Sample == "pink_innate2" ~ "Falsiroseomonas sp. + DOM",
+    Sample == "pink_innate3" ~ "Falsiroseomonas sp. + DOM",
+    Sample == "host1" ~ "Host Alone",
+    Sample == "host2" ~ "Host Alone",
+    Sample == "host3" ~ "Host Alone",
+    Sample == "innate1" ~ "DOM Alone",
+    Sample == "innate2" ~ "DOM Alone",
+    Sample == "innate3" ~ "DOM Alone",
+    TRUE ~ "Other")) %>% mutate("Treatment"= case_when(
+   Sample == "mixed_host1" ~ "Host Selectivity Feedback",
+    Sample == "mixed_host2" ~ "Host Selectivity Feedback",
+    Sample == "mixed_host3" ~ "Host Selectivity Feedback",
+    Sample == "mixed_innate1" ~ "Innate Host Selection",
+    Sample == "mixed_innate2" ~ "Innate Host Selection",
+    Sample == "mixed_innate3" ~ "Innate Host Selection",
+    Sample == "white_host1" ~ "Host Selectivity Feedback",
+    Sample == "white_host2" ~ "Host Selectivity Feedback",
+    Sample == "white_host3" ~ "Host Selectivity Feedback",
+    Sample == "pink_host1" ~ "Host Selectivity Feedback",
+    Sample == "pink_host2" ~ "Host Selectivity Feedback",
+    Sample == "pink_host3" ~ "Host Selectivity Feedback",
+    Sample == "white_innate1" ~ "Innate Host Selection",
+    Sample == "white_innate2" ~ "Innate Host Selection",
+    Sample == "white_innate3" ~ "Innate Host Selection",
+    Sample == "pink_innate1" ~ "Innate Host Selection",
+    Sample == "pink_innate2" ~ "Innate Host Selection",
+    Sample == "pink_innate3" ~ "Innate Host Selection",
+    Sample == "host1" ~ "Host Selectivity Feedback",
+    Sample == "host2" ~ "Host Selectivity Feedback",
+    Sample == "host3" ~ "Host Selectivity Feedback",
+    Sample == "innate1" ~ "Innate Host Selection",
+    Sample == "innate2" ~ "Innate Host Selection",
+    Sample == "innate3" ~ "Innate Host Selection",
+    TRUE ~ "Other"))
+
+#Make the figure
+
+ggplot(pcoa_df, aes(x = Axis1, y = Axis2, color = `Sample Type`, shape = Treatment)) +
+  geom_point(size = 2) +
+  labs(
+    title = "Whole Dataset Principal Coordinate Analysis",
+    x = x_label,
+    y = y_label) + theme_minimal() + scale_color_brewer(palette = "Set3")
+
+```
+
+
+### Host Selecitivity Feedback ONLY PCoA. Use the same file from above... we will trim it here
+
+```{r}
+#Select Host selectivity feedback samples
+pcoa_data_host <- pcoa_data %>% select(mixed_host1, mixed_host2, mixed_host3,
+                    pink_host1, pink_host2, pink_host3,
+                    white_host1, white_host2, white_host3,
+                    host1, host2, host3)
+
+data_t <- t(pcoa_data_host)
+
+#Scale to standardize euclidean distances
+data_t <- scale(data_t)
+dist_matrix <- dist(data_t, method = "euclidean")
+
+pcoa_result <- cmdscale(dist_matrix, k = 2, eig = TRUE)
+
+#Get eig values to find variation explained and use as axis labels
+eig_vals <- pcoa_result$eig
+var_explained <- eig_vals / sum(eig_vals)
+x_label <- paste0("(", round(100 * var_explained[1], 1), "%)")
+y_label <- paste0("(", round(100 * var_explained[2], 1), "%)")
+
+#Make data frame for plotting
+pcoa_df <- data.frame(
+  Sample = rownames(pcoa_result$points),
+  Axis1 = pcoa_result$points[, 1],
+  Axis2 = pcoa_result$points[, 2])
+
+pcoa_df <- pcoa_df %>% mutate("Sample Type"= case_when(
+   Sample == "mixed_host1" ~ "Both Bacteria",
+    Sample == "mixed_host2" ~ "Both Bacteria",
+    Sample == "mixed_host3" ~ "Both Bacteria",
+    Sample == "white_host1" ~ "Curvibacter sp.",
+    Sample == "white_host2" ~ "Curvibacter sp.",
+    Sample == "white_host3" ~ "Curvibacter sp.",
+    Sample == "pink_host1" ~ "Falsiroseomonas sp.",
+    Sample == "pink_host2" ~ "Falsiroseomonas sp.",
+    Sample == "pink_host3" ~ "Falsiroseomonas sp.",
+    Sample == "host1" ~ "Control",
+    Sample == "host2" ~ "Control",
+    Sample == "host3" ~ "Control",
+    TRUE ~ "Other")) 
+
+ggplot(pcoa_df, aes(x = Axis1, y = Axis2, color = `Sample Type`)) +
+  geom_point(size = 2) +
+  labs(
+    title = "Host Selectivity Feedback Principal Coordinate Analysis",
+    x = x_label,
+    y = y_label) + theme_minimal() + scale_color_brewer(palette = "Set3")
+
+
+```
+
+
+### Innate Host Selection Feedback PCoA
+
+```{r}
+#Select Innate Host Selectivity samples
+pcoa_data_innate <- pcoa_data %>% select(mixed_innate1, mixed_innate2, mixed_innate3,
+                    pink_innate1, pink_innate2, pink_innate3,
+                    white_innate1, white_innate2, white_innate3,
+                    innate1, innate2, innate3)
+
+data_t <- t(pcoa_data_innate)
+
+#Scale to standardize euclidean distances
+data_t <- scale(data_t)
+dist_matrix <- dist(data_t, method = "euclidean")
+
+pcoa_result <- cmdscale(dist_matrix, k = 2, eig = TRUE)
+
+#Get eig values to find variation explained and use as axis labels
+eig_vals <- pcoa_result$eig
+var_explained <- eig_vals / sum(eig_vals)
+x_label <- paste0("(", round(100 * var_explained[1], 1), "%)")
+y_label <- paste0("(", round(100 * var_explained[2], 1), "%)")
+
+#Make data frame for plotting
+pcoa_df <- data.frame(
+  Sample = rownames(pcoa_result$points),
+  Axis1 = pcoa_result$points[, 1],
+  Axis2 = pcoa_result$points[, 2])
+
+pcoa_df <- pcoa_df %>% mutate("Sample Type"= case_when(
+   Sample == "mixed_innate1" ~ "Both Bacteria",
+    Sample == "mixed_innate2" ~ "Both Bacteria",
+    Sample == "mixed_innate3" ~ "Both Bacteria",
+    Sample == "white_innate1" ~ "Curvibacter sp.",
+    Sample == "white_innate2" ~ "Curvibacter sp.",
+    Sample == "white_innate3" ~ "Curvibacter sp.",
+    Sample == "pink_innate1" ~ "Falsiroseomonas sp.",
+    Sample == "pink_innate2" ~ "Falsiroseomonas sp.",
+    Sample == "pink_innate3" ~ "Falsiroseomonas sp.",
+    Sample == "innate1" ~ "Control",
+    Sample == "innate2" ~ "Control",
+    Sample == "innate3" ~ "Control",
+    TRUE ~ "Other")) 
+
+ggplot(pcoa_df, aes(x = Axis1, y = Axis2, color = `Sample Type`)) +
+  geom_point(size = 2) +
+  labs(
+    title = "Innate Host Selection Principal Coordinate Analysis",
+    x = x_label,
+    y = y_label) + theme_minimal() + scale_color_brewer(palette = "Set3")
+```
+
+
+
+
+
+
+
