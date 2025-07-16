@@ -1,0 +1,201 @@
+row.ID,Molecule,Treatment,Treatment_groups,log_peak,Peak_Area_mean,treatment,Bacteria,Control
+669,No ID 669,pink_host,Roseomonas+host,13.501033,13.335705,host selectivity,roseomonas,No
+602,Theanine,pink_host,Roseomonas+host,7.157288,6.060232,host selectivity,roseomonas,No
+571,Acetyllysine,pink_host,Roseomonas+host,9.901159,9.924496,host selectivity,roseomonas,No
+558,Methylglutarate,pink_host,Roseomonas+host,15.358723,15.307282,host selectivity,roseomonas,No
+437,No ID 437,pink_host,Roseomonas+host,11.889474,11.98082,host selectivity,roseomonas,No
+435,No ID 435,pink_host,Roseomonas+host,13.757791,13.672484,host selectivity,roseomonas,No
+417,Ile-Leu,pink_host,Roseomonas+host,7.781183,7.616744,host selectivity,roseomonas,No
+399,No ID 399,pink_host,Roseomonas+host,12.987432,12.729259,host selectivity,roseomonas,No
+358,No ID 358,pink_host,Roseomonas+host,13.732797,13.795745,host selectivity,roseomonas,No
+356,No ID 356,pink_host,Roseomonas+host,13.349197,13.412074,host selectivity,roseomonas,No
+342,No ID 342,pink_host,Roseomonas+host,11.84197,12.184651,host selectivity,roseomonas,No
+317,No ID 317,pink_host,Roseomonas+host,9.905574,9.575469,host selectivity,roseomonas,No
+275,No ID 275,pink_host,Roseomonas+host,8.804714,8.773983,host selectivity,roseomonas,No
+270,Acyl-Tryptamine,pink_host,Roseomonas+host,14.810244,14.850793,host selectivity,roseomonas,No
+261,Dyphylline,pink_host,Roseomonas+host,10.996259,13.009494,host selectivity,roseomonas,No
+260,No ID 260,pink_host,Roseomonas+host,12.632001,12.697309,host selectivity,roseomonas,No
+226,No ID 226,pink_host,Roseomonas+host,12.505778,12.56647,host selectivity,roseomonas,No
+221,No ID 221,pink_host,Roseomonas+host,11.067682,10.863492,host selectivity,roseomonas,No
+217,No ID 217,pink_host,Roseomonas+host,12.804435,12.749621,host selectivity,roseomonas,No
+209,Juglomycin F,pink_host,Roseomonas+host,10.364228,10.307173,host selectivity,roseomonas,No
+134,No ID 134,pink_host,Roseomonas+host,9.325227,11.757598,host selectivity,roseomonas,No
+121,No ID 121,pink_host,Roseomonas+host,8.344424,8.302626,host selectivity,roseomonas,No
+116,No ID 116,pink_host,Roseomonas+host,8.531504,8.350075,host selectivity,roseomonas,No
+87,No ID 87,pink_host,Roseomonas+host,8.548847,9.121938,host selectivity,roseomonas,No
+62,No ID 62,pink_host,Roseomonas+host,12.675027,12.54794,host selectivity,roseomonas,No
+669,No ID 669,pink_innate,Roseomonas+DOM,13.344236,13.404729,Innate Host Selection,roseomonas,No
+602,Theanine,pink_innate,Roseomonas+DOM,12.65053,12.577756,Innate Host Selection,roseomonas,No
+571,Acetyllysine,pink_innate,Roseomonas+DOM,8.626878,8.718567,Innate Host Selection,roseomonas,No
+558,Methylglutarate,pink_innate,Roseomonas+DOM,13.484669,13.695008,Innate Host Selection,roseomonas,No
+437,No ID 437,pink_innate,Roseomonas+DOM,9.935925,10.476816,Innate Host Selection,roseomonas,No
+435,No ID 435,pink_innate,Roseomonas+DOM,13.712691,13.849348,Innate Host Selection,roseomonas,No
+417,Ile-Leu,pink_innate,Roseomonas+DOM,0,0,Innate Host Selection,roseomonas,No
+399,No ID 399,pink_innate,Roseomonas+DOM,12.379432,12.657076,Innate Host Selection,roseomonas,No
+358,No ID 358,pink_innate,Roseomonas+DOM,13.517952,13.61511,Innate Host Selection,roseomonas,No
+356,No ID 356,pink_innate,Roseomonas+DOM,13.155279,13.244122,Innate Host Selection,roseomonas,No
+342,No ID 342,pink_innate,Roseomonas+DOM,10.492265,10.583682,Innate Host Selection,roseomonas,No
+317,No ID 317,pink_innate,Roseomonas+DOM,11.378369,11.40266,Innate Host Selection,roseomonas,No
+275,No ID 275,pink_innate,Roseomonas+DOM,0,0,Innate Host Selection,roseomonas,No
+270,Acyl-Tryptamine,pink_innate,Roseomonas+DOM,13.346427,13.427872,Innate Host Selection,roseomonas,No
+261,Dyphylline,pink_innate,Roseomonas+DOM,14.087757,14.385952,Innate Host Selection,roseomonas,No
+260,No ID 260,pink_innate,Roseomonas+DOM,13.095487,12.943767,Innate Host Selection,roseomonas,No
+226,No ID 226,pink_innate,Roseomonas+DOM,12.023818,12.041666,Innate Host Selection,roseomonas,No
+221,No ID 221,pink_innate,Roseomonas+DOM,10.524331,10.763421,Innate Host Selection,roseomonas,No
+217,No ID 217,pink_innate,Roseomonas+DOM,12.100323,12.222552,Innate Host Selection,roseomonas,No
+209,Juglomycin F,pink_innate,Roseomonas+DOM,10.855189,10.87521,Innate Host Selection,roseomonas,No
+134,No ID 134,pink_innate,Roseomonas+DOM,8.04623,10.957565,Innate Host Selection,roseomonas,No
+121,No ID 121,pink_innate,Roseomonas+DOM,11.949252,11.459505,Innate Host Selection,roseomonas,No
+116,No ID 116,pink_innate,Roseomonas+DOM,13.138308,13.142358,Innate Host Selection,roseomonas,No
+87,No ID 87,pink_innate,Roseomonas+DOM,13.651266,13.865104,Innate Host Selection,roseomonas,No
+62,No ID 62,pink_innate,Roseomonas+DOM,7.579299,10.104482,Innate Host Selection,roseomonas,No
+669,No ID 669,host,host alone,13.353501,13.377187,host selectivity,control,Yes
+602,Theanine,host,host alone,13.39773,13.524252,host selectivity,control,Yes
+571,Acetyllysine,host,host alone,12.715286,12.871708,host selectivity,control,Yes
+558,Methylglutarate,host,host alone,9.784255,10.827842,host selectivity,control,Yes
+437,No ID 437,host,host alone,11.720915,11.944612,host selectivity,control,Yes
+435,No ID 435,host,host alone,13.763433,13.876287,host selectivity,control,Yes
+417,Ile-Leu,host,host alone,13.62145,13.752603,host selectivity,control,Yes
+399,No ID 399,host,host alone,14.956523,15.124839,host selectivity,control,Yes
+358,No ID 358,host,host alone,14.676715,14.754576,host selectivity,control,Yes
+356,No ID 356,host,host alone,14.344259,14.419708,host selectivity,control,Yes
+342,No ID 342,host,host alone,8.634292,9.451757,host selectivity,control,Yes
+317,No ID 317,host,host alone,10.877336,11.873877,host selectivity,control,Yes
+275,No ID 275,host,host alone,11.802994,12.258168,host selectivity,control,Yes
+270,Acyl-Tryptamine,host,host alone,13.58498,13.820298,host selectivity,control,Yes
+261,Dyphylline,host,host alone,13.680226,13.253043,host selectivity,control,Yes
+260,No ID 260,host,host alone,13.585554,13.635887,host selectivity,control,Yes
+226,No ID 226,host,host alone,12.679469,12.691124,host selectivity,control,Yes
+221,No ID 221,host,host alone,13.392581,13.297421,host selectivity,control,Yes
+217,No ID 217,host,host alone,12.001346,11.760409,host selectivity,control,Yes
+209,Juglomycin F,host,host alone,13.578192,12.959817,host selectivity,control,Yes
+134,No ID 134,host,host alone,7.957815,11.305272,host selectivity,control,Yes
+121,No ID 121,host,host alone,11.459584,11.086292,host selectivity,control,Yes
+116,No ID 116,host,host alone,12.548709,12.135154,host selectivity,control,Yes
+87,No ID 87,host,host alone,13.480116,13.1888,host selectivity,control,Yes
+62,No ID 62,host,host alone,8.272898,10.198914,host selectivity,control,Yes
+669,No ID 669,innate,DOM alone,13.629008,13.417329,Innate Host Selection,control,Yes
+602,Theanine,innate,DOM alone,13.397331,13.140746,Innate Host Selection,control,Yes
+571,Acetyllysine,innate,DOM alone,13.421986,13.103504,Innate Host Selection,control,Yes
+558,Methylglutarate,innate,DOM alone,11.514731,11.514335,Innate Host Selection,control,Yes
+437,No ID 437,innate,DOM alone,12.070324,11.869697,Innate Host Selection,control,Yes
+435,No ID 435,innate,DOM alone,14.11837,13.961796,Innate Host Selection,control,Yes
+417,Ile-Leu,innate,DOM alone,14.109734,13.977787,Innate Host Selection,control,Yes
+399,No ID 399,innate,DOM alone,11.297176,13.689743,Innate Host Selection,control,Yes
+358,No ID 358,innate,DOM alone,14.666898,14.590037,Innate Host Selection,control,Yes
+356,No ID 356,innate,DOM alone,14.322856,14.244278,Innate Host Selection,control,Yes
+342,No ID 342,innate,DOM alone,9.067254,8.868282,Innate Host Selection,control,Yes
+317,No ID 317,innate,DOM alone,10.618635,11.465548,Innate Host Selection,control,Yes
+275,No ID 275,innate,DOM alone,12.125265,11.784596,Innate Host Selection,control,Yes
+270,Acyl-Tryptamine,innate,DOM alone,13.452192,13.402315,Innate Host Selection,control,Yes
+261,Dyphylline,innate,DOM alone,15.081332,14.549116,Innate Host Selection,control,Yes
+260,No ID 260,innate,DOM alone,13.267684,13.189498,Innate Host Selection,control,Yes
+226,No ID 226,innate,DOM alone,11.734421,11.877169,Innate Host Selection,control,Yes
+221,No ID 221,innate,DOM alone,12.861677,12.7686,Innate Host Selection,control,Yes
+217,No ID 217,innate,DOM alone,11.459092,11.434701,Innate Host Selection,control,Yes
+209,Juglomycin F,innate,DOM alone,11.081201,11.061884,Innate Host Selection,control,Yes
+134,No ID 134,innate,DOM alone,12.002016,12.05474,Innate Host Selection,control,Yes
+121,No ID 121,innate,DOM alone,12.248599,12.244158,Innate Host Selection,control,Yes
+116,No ID 116,innate,DOM alone,12.839208,12.900907,Innate Host Selection,control,Yes
+87,No ID 87,innate,DOM alone,13.921872,13.906186,Innate Host Selection,control,Yes
+62,No ID 62,innate,DOM alone,10.095448,10.491068,Innate Host Selection,control,Yes
+669,No ID 669,white_host,Curvibacter+host,12.968101,13.206763,host selectivity,curvibacter,No
+602,Theanine,white_host,Curvibacter+host,12.827373,13.161462,host selectivity,curvibacter,No
+571,Acetyllysine,white_host,Curvibacter+host,12.124335,12.246,host selectivity,curvibacter,No
+558,Methylglutarate,white_host,Curvibacter+host,12.988644,12.346571,host selectivity,curvibacter,No
+437,No ID 437,white_host,Curvibacter+host,12.529815,12.733194,host selectivity,curvibacter,No
+435,No ID 435,white_host,Curvibacter+host,13.593227,13.777196,host selectivity,curvibacter,No
+417,Ile-Leu,white_host,Curvibacter+host,13.416911,13.482962,host selectivity,curvibacter,No
+399,No ID 399,white_host,Curvibacter+host,14.725018,14.9369,host selectivity,curvibacter,No
+358,No ID 358,white_host,Curvibacter+host,14.853913,14.975891,host selectivity,curvibacter,No
+356,No ID 356,white_host,Curvibacter+host,14.550556,14.677057,host selectivity,curvibacter,No
+342,No ID 342,white_host,Curvibacter+host,0,11.489863,host selectivity,curvibacter,No
+317,No ID 317,white_host,Curvibacter+host,10.610885,12.196172,host selectivity,curvibacter,No
+275,No ID 275,white_host,Curvibacter+host,10.290319,11.209071,host selectivity,curvibacter,No
+270,Acyl-Tryptamine,white_host,Curvibacter+host,13.774708,13.995009,host selectivity,curvibacter,No
+261,Dyphylline,white_host,Curvibacter+host,13.698901,13.739059,host selectivity,curvibacter,No
+260,No ID 260,white_host,Curvibacter+host,13.486573,13.60539,host selectivity,curvibacter,No
+226,No ID 226,white_host,Curvibacter+host,12.772095,12.555905,host selectivity,curvibacter,No
+221,No ID 221,white_host,Curvibacter+host,12.469061,12.107955,host selectivity,curvibacter,No
+217,No ID 217,white_host,Curvibacter+host,11.766063,12.151822,host selectivity,curvibacter,No
+209,Juglomycin F,white_host,Curvibacter+host,11.157428,11.645142,host selectivity,curvibacter,No
+134,No ID 134,white_host,Curvibacter+host,12.215783,12.468218,host selectivity,curvibacter,No
+121,No ID 121,white_host,Curvibacter+host,8.040825,10.684317,host selectivity,curvibacter,No
+116,No ID 116,white_host,Curvibacter+host,8.313244,11.390394,host selectivity,curvibacter,No
+87,No ID 87,white_host,Curvibacter+host,7.564391,12.479722,host selectivity,curvibacter,No
+62,No ID 62,white_host,Curvibacter+host,11.569992,11.429313,host selectivity,curvibacter,No
+669,No ID 669,white_innate,Curvibacter+DOM,13.079751,13.157448,Innate Host Selection,curvibacter,No
+602,Theanine,white_innate,Curvibacter+DOM,12.803874,12.878341,Innate Host Selection,curvibacter,No
+571,Acetyllysine,white_innate,Curvibacter+DOM,9.104084,9.284427,Innate Host Selection,curvibacter,No
+558,Methylglutarate,white_innate,Curvibacter+DOM,11.753783,11.733541,Innate Host Selection,curvibacter,No
+437,No ID 437,white_innate,Curvibacter+DOM,12.56234,12.609801,Innate Host Selection,curvibacter,No
+435,No ID 435,white_innate,Curvibacter+DOM,13.734103,13.772521,Innate Host Selection,curvibacter,No
+417,Ile-Leu,white_innate,Curvibacter+DOM,13.675385,13.695682,Innate Host Selection,curvibacter,No
+399,No ID 399,white_innate,Curvibacter+DOM,12.432882,12.355274,Innate Host Selection,curvibacter,No
+358,No ID 358,white_innate,Curvibacter+DOM,14.284553,14.298927,Innate Host Selection,curvibacter,No
+356,No ID 356,white_innate,Curvibacter+DOM,13.954775,13.971313,Innate Host Selection,curvibacter,No
+342,No ID 342,white_innate,Curvibacter+DOM,9.123471,10.774825,Innate Host Selection,curvibacter,No
+317,No ID 317,white_innate,Curvibacter+DOM,12.00486,11.738707,Innate Host Selection,curvibacter,No
+275,No ID 275,white_innate,Curvibacter+DOM,10.064467,9.774719,Innate Host Selection,curvibacter,No
+270,Acyl-Tryptamine,white_innate,Curvibacter+DOM,13.151481,13.205041,Innate Host Selection,curvibacter,No
+261,Dyphylline,white_innate,Curvibacter+DOM,13.401179,13.836278,Innate Host Selection,curvibacter,No
+260,No ID 260,white_innate,Curvibacter+DOM,13.030276,13.077812,Innate Host Selection,curvibacter,No
+226,No ID 226,white_innate,Curvibacter+DOM,11.74588,11.794666,Innate Host Selection,curvibacter,No
+221,No ID 221,white_innate,Curvibacter+DOM,10.104295,10.071984,Innate Host Selection,curvibacter,No
+217,No ID 217,white_innate,Curvibacter+DOM,11.940572,12.432105,Innate Host Selection,curvibacter,No
+209,Juglomycin F,white_innate,Curvibacter+DOM,10.836218,10.792851,Innate Host Selection,curvibacter,No
+134,No ID 134,white_innate,Curvibacter+DOM,12.324684,11.379728,Innate Host Selection,curvibacter,No
+121,No ID 121,white_innate,Curvibacter+DOM,9.129187,10.572696,Innate Host Selection,curvibacter,No
+116,No ID 116,white_innate,Curvibacter+DOM,10.240037,11.407822,Innate Host Selection,curvibacter,No
+87,No ID 87,white_innate,Curvibacter+DOM,8.81143,12.371738,Innate Host Selection,curvibacter,No
+62,No ID 62,white_innate,Curvibacter+DOM,12.129962,11.741742,Innate Host Selection,curvibacter,No
+669,No ID 669,mixed_host,both+host,13.564755,13.518012,host selectivity,mixed,No
+602,Theanine,mixed_host,both+host,8.735169,8.34396,host selectivity,mixed,No
+571,Acetyllysine,mixed_host,both+host,9.406616,9.807567,host selectivity,mixed,No
+558,Methylglutarate,mixed_host,both+host,15.32126,15.448828,host selectivity,mixed,No
+437,No ID 437,mixed_host,both+host,11.737867,11.87895,host selectivity,mixed,No
+435,No ID 435,mixed_host,both+host,13.693014,13.895176,host selectivity,mixed,No
+417,Ile-Leu,mixed_host,both+host,9.083424,8.581511,host selectivity,mixed,No
+399,No ID 399,mixed_host,both+host,13.10161,13.014623,host selectivity,mixed,No
+358,No ID 358,mixed_host,both+host,14.127487,14.203962,host selectivity,mixed,No
+356,No ID 356,mixed_host,both+host,13.750163,13.846632,host selectivity,mixed,No
+342,No ID 342,mixed_host,both+host,11.528815,12.225601,host selectivity,mixed,No
+317,No ID 317,mixed_host,both+host,10.984414,10.573543,host selectivity,mixed,No
+275,No ID 275,mixed_host,both+host,9.286044,9.225617,host selectivity,mixed,No
+270,Acyl-Tryptamine,mixed_host,both+host,14.543673,14.813243,host selectivity,mixed,No
+261,Dyphylline,mixed_host,both+host,13.078211,13.940653,host selectivity,mixed,No
+260,No ID 260,mixed_host,both+host,12.531672,12.92883,host selectivity,mixed,No
+226,No ID 226,mixed_host,both+host,12.333642,12.579872,host selectivity,mixed,No
+221,No ID 221,mixed_host,both+host,11.949598,11.537246,host selectivity,mixed,No
+217,No ID 217,mixed_host,both+host,12.726872,12.975941,host selectivity,mixed,No
+209,Juglomycin F,mixed_host,both+host,10.398515,10.52155,host selectivity,mixed,No
+134,No ID 134,mixed_host,both+host,11.127403,11.703592,host selectivity,mixed,No
+121,No ID 121,mixed_host,both+host,12.24129,11.196432,host selectivity,mixed,No
+116,No ID 116,mixed_host,both+host,12.889568,11.818473,host selectivity,mixed,No
+87,No ID 87,mixed_host,both+host,13.954288,12.871623,host selectivity,mixed,No
+62,No ID 62,mixed_host,both+host,10.338247,11.345751,host selectivity,mixed,No
+669,No ID 669,mixed_innate,both+DOM,13.630431,13.497316,Innate Host Selection,mixed,No
+602,Theanine,mixed_innate,both+DOM,13.539256,13.394465,Innate Host Selection,mixed,No
+571,Acetyllysine,mixed_innate,both+DOM,9.614507,9.599388,Innate Host Selection,mixed,No
+558,Methylglutarate,mixed_innate,both+DOM,12.887497,12.759043,Innate Host Selection,mixed,No
+437,No ID 437,mixed_innate,both+DOM,12.306506,12.363972,Innate Host Selection,mixed,No
+435,No ID 435,mixed_innate,both+DOM,14.249665,14.129166,Innate Host Selection,mixed,No
+417,Ile-Leu,mixed_innate,both+DOM,0,7.202732,Innate Host Selection,mixed,No
+399,No ID 399,mixed_innate,both+DOM,13.561429,13.341669,Innate Host Selection,mixed,No
+358,No ID 358,mixed_innate,both+DOM,14.506197,14.197122,Innate Host Selection,mixed,No
+356,No ID 356,mixed_innate,both+DOM,14.181674,13.858752,Innate Host Selection,mixed,No
+342,No ID 342,mixed_innate,both+DOM,12.316029,12.232091,Innate Host Selection,mixed,No
+317,No ID 317,mixed_innate,both+DOM,11.525888,11.436505,Innate Host Selection,mixed,No
+275,No ID 275,mixed_innate,both+DOM,0,0,Innate Host Selection,mixed,No
+270,Acyl-Tryptamine,mixed_innate,both+DOM,13.610383,13.43644,Innate Host Selection,mixed,No
+261,Dyphylline,mixed_innate,both+DOM,13.386558,13.375146,Innate Host Selection,mixed,No
+260,No ID 260,mixed_innate,both+DOM,13.372475,13.22042,Innate Host Selection,mixed,No
+226,No ID 226,mixed_innate,both+DOM,12.035728,11.695772,Innate Host Selection,mixed,No
+221,No ID 221,mixed_innate,both+DOM,10.194976,10.256646,Innate Host Selection,mixed,No
+217,No ID 217,mixed_innate,both+DOM,13.006588,12.670857,Innate Host Selection,mixed,No
+209,Juglomycin F,mixed_innate,both+DOM,11.248063,11.136232,Innate Host Selection,mixed,No
+134,No ID 134,mixed_innate,both+DOM,7.847578,10.552357,Innate Host Selection,mixed,No
+121,No ID 121,mixed_innate,both+DOM,9.837754,9.785481,Innate Host Selection,mixed,No
+116,No ID 116,mixed_innate,both+DOM,10.973898,10.578833,Innate Host Selection,mixed,No
+87,No ID 87,mixed_innate,both+DOM,8.26955,8.337431,Innate Host Selection,mixed,No
+62,No ID 62,mixed_innate,both+DOM,10.873633,11.37156,Innate Host Selection,mixed,No
