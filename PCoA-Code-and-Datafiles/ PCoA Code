@@ -2,6 +2,7 @@ Start with an R markdown file and copy and paste
 
 email me at mfoulkes@stanford.edu if you have troubles
 
+Note that this workflow is for a standardized euclidean distance matrix. Individuals interested in using a Bray-curtis model can easily do so by deleting the scaling the data set and change the dist function to "vegdist" and the method to "bray"
 
 ```{r, echo=TRUE}
 library(read.csv)
