@@ -4,7 +4,7 @@ email me at mfoulkes@stanford.edu if you have troubles
 
 
 ```{r, echo=TRUE}
-library(readxl)
+library(read.csv)
 #install.packages("tidyverse")
 library(tidyverse)
 install.packages("vegan")
