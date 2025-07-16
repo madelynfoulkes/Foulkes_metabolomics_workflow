@@ -1,0 +1,57 @@
+row.ID,Molecule,Treatment,Peak_Area,Treatment_groups,Peak_Area_mean,Treatment,Bacteria,Competition?
+360,Leucinic acid,pink_host1,10618.855,Roseomonas+host,8.665881,Host Selectivity,Roseomonas sp.,No
+365,No ID 365,pink_host1,0,Roseomonas+host,0,Host Selectivity,Roseomonas sp.,No
+578,No ID 578,pink_host1,0,Roseomonas+host,0,Host Selectivity,Roseomonas sp.,No
+581,No ID 581,pink_host1,0,Roseomonas+host,0,Host Selectivity,Roseomonas sp.,No
+582,Glutamine,pink_host1,0,Roseomonas+host,0,Host Selectivity,Roseomonas sp.,No
+583,L-asparagine,pink_host1,0,Roseomonas+host,0,Host Selectivity,Roseomonas sp.,No
+592,L-Histidine,pink_host1,0,Roseomonas+host,0,Host Selectivity,Roseomonas sp.,No
+360,Leucinic acid,pink_innate1,0,Roseomonas+DOM,0,Innate Host Feedback,Roseomonas sp.,No
+365,No ID 365,pink_innate1,0,Roseomonas+DOM,0,Innate Host Feedback,Roseomonas sp.,No
+578,No ID 578,pink_innate1,0,Roseomonas+DOM,0,Innate Host Feedback,Roseomonas sp.,No
+581,No ID 581,pink_innate1,0,Roseomonas+DOM,0,Innate Host Feedback,Roseomonas sp.,No
+582,Glutamine,pink_innate1,0,Roseomonas+DOM,0,Innate Host Feedback,Roseomonas sp.,No
+583,L-asparagine,pink_innate1,0,Roseomonas+DOM,0,Innate Host Feedback,Roseomonas sp.,No
+592,L-Histidine,pink_innate1,0,Roseomonas+DOM,0,Innate Host Feedback,Roseomonas sp.,No
+360,Leucinic acid,host1,0,host alone,0,Host Selectivity,Control,No
+365,No ID 365,host1,0,host alone,0,Host Selectivity,Control,No
+578,No ID 578,host1,4054.912,host alone,8.964137,Host Selectivity,Control,No
+581,No ID 581,host1,87168.71,host alone,11.397645,Host Selectivity,Control,No
+582,Glutamine,host1,100296.25,host alone,11.599915,Host Selectivity,Control,No
+583,L-asparagine,host1,59284.46,host alone,11.105471,Host Selectivity,Control,No
+592,L-Histidine,host1,40369.11,host alone,10.572283,Host Selectivity,Control,No
+360,Leucinic acid,innate1,0,DOM alone,0,Innate Host Feedback,Control,No
+365,No ID 365,innate1,0,DOM alone,0,Innate Host Feedback,Control,No
+578,No ID 578,innate1,2011.304,DOM alone,8.345537,Innate Host Feedback,Control,No
+581,No ID 581,innate1,30322.33,DOM alone,10.7689,Innate Host Feedback,Control,No
+582,Glutamine,innate1,39523.98,DOM alone,10.997856,Innate Host Feedback,Control,No
+583,L-asparagine,innate1,28206.52,DOM alone,10.552955,Innate Host Feedback,Control,No
+592,L-Histidine,innate1,26976.496,DOM alone,11.29954,Innate Host Feedback,Control,No
+360,Leucinic acid,white_host1,0,Curvibacter+host,0,Host Selectivity,Curvibacter sp.,No
+365,No ID 365,white_host1,0,Curvibacter+host,0,Host Selectivity,Curvibacter sp.,No
+578,No ID 578,white_host1,0,Curvibacter+host,0,Host Selectivity,Curvibacter sp.,No
+581,No ID 581,white_host1,0,Curvibacter+host,0,Host Selectivity,Curvibacter sp.,No
+582,Glutamine,white_host1,0,Curvibacter+host,0,Host Selectivity,Curvibacter sp.,No
+583,L-asparagine,white_host1,0,Curvibacter+host,0,Host Selectivity,Curvibacter sp.,No
+592,L-Histidine,white_host1,0,Curvibacter+host,0,Host Selectivity,Curvibacter sp.,No
+360,Leucinic acid,white_innate1,0,Curvibacter+DOM,0,Innate Host Feedback,Curvibacter sp.,No
+365,No ID 365,white_innate1,0,Curvibacter+DOM,0,Innate Host Feedback,Curvibacter sp.,No
+578,No ID 578,white_innate1,0,Curvibacter+DOM,0,Innate Host Feedback,Curvibacter sp.,No
+581,No ID 581,white_innate1,0,Curvibacter+DOM,0,Innate Host Feedback,Curvibacter sp.,No
+582,Glutamine,white_innate1,0,Curvibacter+DOM,0,Innate Host Feedback,Curvibacter sp.,No
+583,L-asparagine,white_innate1,0,Curvibacter+DOM,0,Innate Host Feedback,Curvibacter sp.,No
+592,L-Histidine,white_innate1,0,Curvibacter+DOM,0,Innate Host Feedback,Curvibacter sp.,No
+360,Leucinic acid,mixed_host1,6052.474,both+host,12.003022,Host Selectivity,Mixed,Yes
+365,No ID 365,mixed_host1,0,both+host,9.590923,Host Selectivity,Mixed,Yes
+578,No ID 578,mixed_host1,0,both+host,7.910976,Host Selectivity,Mixed,Yes
+581,No ID 581,mixed_host1,0,both+host,0,Host Selectivity,Mixed,Yes
+582,Glutamine,mixed_host1,0,both+host,0,Host Selectivity,Mixed,Yes
+583,L-asparagine,mixed_host1,0,both+host,0,Host Selectivity,Mixed,Yes
+592,L-Histidine,mixed_host1,0,both+host,9.466934,Host Selectivity,Mixed,Yes
+360,Leucinic acid,mixed_innate1,28545.598,both+DOM,9.160751,Innate Host Feedback,Mixed,Yes
+365,No ID 365,mixed_innate1,205832.27,both+DOM,11.136219,Innate Host Feedback,Mixed,Yes
+578,No ID 578,mixed_innate1,0,both+DOM,8.974471,Innate Host Feedback,Mixed,Yes
+581,No ID 581,mixed_innate1,0,both+DOM,5.716508,Innate Host Feedback,Mixed,Yes
+582,Glutamine,mixed_innate1,0,both+DOM,6.627333,Innate Host Feedback,Mixed,Yes
+583,L-asparagine,mixed_innate1,0,both+DOM,7.388692,Innate Host Feedback,Mixed,Yes
+592,L-Histidine,mixed_innate1,0,both+DOM,9.837839,Innate Host Feedback,Mixed,Yes
