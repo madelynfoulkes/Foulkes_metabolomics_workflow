@@ -5,4 +5,4 @@ This paper is not currently published, but individuals with questions or comment
 The goal of this project was to apply untargeted metabolomic analysis to an extablished model microbiome created by Dr. Jinny Yang. These workflows work well for individuals working with large metabolomic datasets in the field of ecology or microbiology. 
 
 
-I have provided the code on how to make basic but visually pleasing facet wrapped growth curves, scaled and organized heatmaps, and PCoA ordinations for very large datasets (over 200 observations)
+I have provided the code on how to make basic but useful facet wrapped growth curves, scaled and organized heatmaps, and PCoA ordinations for very large datasets (over 200 observations)
