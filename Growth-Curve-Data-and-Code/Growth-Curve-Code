@@ -1,0 +1,56 @@
+Copy and paste into an R Markdown File
+
+email me at mfoulkes@stanford.edu for questions
+
+Note: Falsiroseomonas sp. was originally identified as Roseomonas sp. in the data collection phase but later reidentified in a more accurate genomic anaysis. As such, all raw data files must be edited to account for this change.
+
+## Figure 1: Introduction Graph
+
+### 1) Make the Visual
+
+The pre-processed data for this section, as described in the main figure, is available in Yang 2024 [dissertation] & Yang & Denef 2025 (Unpublished)
+
+```{r, echo=TRUE}
+library(readxl)
+#install.packages("tidyverse")
+library(tidyverse)
+```
+
+```{r}
+ df <- read_excel("/Users/maddyfoulkes/Desktop/IsolateCount_Day0_22.xlsx")
+ df$Density <- as.numeric(df$Density)
+df<- df %>% mutate(`Bacteria Species` = case_when(
+  Bacteria == "Roseomonas sp." ~ "Falsiroseomonas sp.",
+  Bacteria == "Curvibacter sp." ~ "Curvibacter sp."))
+
+df <- df[!is.na(df$Density), ]
+data <- df %>% group_by(Combination, Treatments, Day, `Bacteria Species`) %>% 
+  mutate(mean_density= mean(Density)) %>% mutate(sd_density= sd(Density)) %>% 
+  mutate_all(~replace(., is.na(.), 0)) %>% ungroup() %>%
+  select(Combination, Treatments, Day, `Bacteria Species`, mean_density, 
+         sd_density, Density)
+  
+data <- data %>% mutate( Treatment = case_when(
+  Treatments== "H" ~ "Host Selectivity Feedback",
+  Treatments== "D" ~ "Innate Host Selection"))
+
+data$Combination <- factor(data$Combination, levels = c("XPA", "26D3", "Mix"))
+data %>%
+  ggplot(aes(x = Day, y = mean_density, color = `Bacteria Species`, group = `Bacteria Species`)) + 
+  geom_point() +geom_line() +
+  geom_errorbar(aes(
+    ymin = mean_density - sd_density, ymax = mean_density + sd_density), 
+    width = 0.7) +
+  labs( y = "Mean Density (CFU/µL)", 
+        title = "Average Growth of Bacterial Species Over Time", 
+        color = "Bacteria Species") +
+  facet_grid(Combination ~ Treatment) + theme_minimal() +
+  theme(plot.title = element_text(size = 16, face = "bold"), 
+        axis.title = element_text(size = 11), 
+        legend.title = element_text(size = 10),
+    legend.text = element_text(size = 10), 
+    strip.text = element_text(size = 12)) +
+  scale_color_manual(values = c( "purple", "pink"))+
+  theme(strip.text.y = element_blank())
+
+```
