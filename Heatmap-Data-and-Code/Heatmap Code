@@ -7,6 +7,14 @@ Email me at mfoulkes@stanford.edu for questions
 
 Individuals who want to plot features other than those I have in the trimmed datafiles may refer to the full dataset used in the PCoA code
 
+```{r, echo=TRUE}
+library(readxl)
+#install.packages("tidyverse")
+library(tidyverse)
+#install.packages("tidyheatmaps")
+library(tidyheatmaps)
+```
+
 ### 1) Figure 4: Scaled log relative abundance of random forest hits
 
 (Note that the mean peak area refers to the mean of the log transformed data)
