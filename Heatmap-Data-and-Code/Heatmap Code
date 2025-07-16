@@ -1,1 +1,131 @@
+Copy and paste into an R Markdown File. This code contains instructions for 4 heatmaps with various uses. 
+Read the full publication Foulkes et al 2025 for Citations on packages and information on how to use these visualizationd
 
+Note: Falsiroseomonas sp. was originally identified as Roseomonas sp. in the data collection phase but later reidentified in a more accurate genomic anaysis. As such, all raw data files must be edited to account for this change.
+
+Email me at mfoulkes@stanford.edu for questions
+
+Individuals who want to plot features other than those I have in the trimmed datafiles may refer to the full dataset used in the PCoA code
+
+### 1) Figure 4: Scaled log relative abundance of random forest hits
+
+(Note that the mean peak area refers to the mean of the log transformed data)
+
+```{r}
+df<- read.csv("final_heatmap1.csv")
+df <- df[order(df$treatment),]
+df <- df %>% mutate(Treatments = case_when(
+  treatment == "Innate Host Selection" ~ "Innate Host Selection",
+  treatment == "host selectivity" ~ "Host Selectivity Feedback"
+))
+df$row.ID <- factor(df$row.ID)
+
+df<- df %>% mutate(`Bacteria Species` = case_when(
+  Bacteria == "roseomonas" ~ "Falsiroseomonas sp.",
+  Bacteria == "curvibacter" ~ "Curvibacter sp.", 
+  Bacteria == "control" ~ "Control",
+  Bacteria == "mixed" ~ "Both Bacteria"))
+
+df<- df %>% mutate(Treatment_groups_edited = case_when(
+  Treatment_groups == "Roseomonas+DOM" ~ "Falsiroseomonas sp.+DOM",
+  Treatment_groups == "Curvibacter+DOM" ~ "Curvibacter sp.+DOM", 
+  Treatment_groups == "DOM alone" ~ "DOM Alone",
+  Treatment_groups == "host alone" ~ "Host Alone",
+  Treatment_groups == "Roseomonas+host" ~ "Falsiroseomonas sp.+Host",
+  Treatment_groups == "Curvibacter+host" ~ "Curvibacter sp.+Host",
+  Treatment_groups == "both+DOM" ~ "Both+DOM",
+  Treatment_groups == "both+host" ~ "Both+Host"))
+
+tidy_heatmap(
+  df,
+  rows = Molecule,
+  columns = Treatment_groups_edited,
+  values = Peak_Area_mean,
+  color_legend_n = 15,
+  main = "Log(Relative Abundance) of Random Forest Hits, Scaled per Hit",
+  scale = "row",
+  gaps_col = Treatments,
+  annotation_col = c(Treatments),
+  cluster_rows = T)
+```
+
+###  Supplemental Figure 1) Log relative abundance of random forest hits
+
+(Note that the mean peak area refers to the mean of the log transformed data)
+
+```{r}
+tidy_heatmap(
+  df,
+  rows = Molecule,
+  columns = Treatment_groups_edited,
+  values = Peak_Area_mean,
+  color_legend_n = 15,
+  main = "Relative Log(Abundance) of Random Forest Hits",
+  gaps_col = Treatments,
+  annotation_col = c(Treatments, `Bacteria Species`),
+  display_numbers = TRUE,
+  cluster_rows = T)
+```
+
+### Supplemental Figure 2) Raw abundance heat map
+
+(This dataset can also be used for individuals interested in processing the data themselves)
+
+```{r}
+raw_data <- read.csv("heatmap_data_no_transformation.csv")
+
+raw_data$row.ID <- factor(raw_data$row.ID)
+
+raw_data<- raw_data %>% mutate(Treatment_groups_edited = case_when(
+  Treatment_groups == "Roseomonas+DOM" ~ "Falsiroseomonas sp.+DOM",
+  Treatment_groups == "Curvibacter+DOM" ~ "Curvibacter sp.+DOM", 
+  Treatment_groups == "DOM alone" ~ "DOM Alone",
+  Treatment_groups == "host alone" ~ "Host Alone",
+  Treatment_groups == "Roseomonas+host" ~ "Falsiroseomonas sp.+Host",
+  Treatment_groups == "Curvibacter+host" ~ "Curvibacter sp.+Host",
+  Treatment_groups == "both+DOM" ~ "Both+DOM",
+  Treatment_groups == "both+host" ~ "Both+Host"))
+
+tidy_heatmap(
+  raw_data,
+  rows = row.ID,
+  columns = Treatment_groups_edited,
+  values = Peak_Area_mean_raw,
+  color_legend_n = 15,
+  main = "Relative Abundance of Random Forest Hits, No Transformation")
+```
+
+### Figure 5) Log abundance of molecules indicating bacterial metabolic changes. The data is already transformed
+
+```{r}
+data <- read.csv("bacteria_heatmaps2.csv")
+data <- data[order(data$Treatment.1),]
+data$Treatment <- data$Treatment.1
+data$"Competition?" <- data$Competition.
+
+data<- data %>% mutate(`Bacteria Species` = case_when(
+  Bacteria == "Roseomonas sp." ~ "Falsiroseomonas sp.",
+  Bacteria == "Curvibacter sp." ~ "Curvibacter sp.", 
+  Bacteria == "Control" ~ "Control",
+  Bacteria == "Mixed" ~ "Both Bacteria"))
+
+data<- data %>% mutate(Treatment_groups_edited = case_when(
+  Treatment_groups == "Roseomonas+DOM" ~ "Falsiroseomonas sp.+DOM",
+  Treatment_groups == "Curvibacter+DOM" ~ "Curvibacter sp.+DOM", 
+  Treatment_groups == "DOM alone" ~ "DOM Alone",
+  Treatment_groups == "host alone" ~ "Host Alone",
+  Treatment_groups == "Roseomonas+host" ~ "Falsiroseomonas sp.+Host",
+  Treatment_groups == "Curvibacter+host" ~ "Curvibacter sp.+Host",
+  Treatment_groups == "both+DOM" ~ "Both+DOM",
+  Treatment_groups == "both+host" ~ "Both+Host"))
+
+heatmap <- tidy_heatmap(
+  data,
+  rows = Molecule,
+  columns = Treatment_groups_edited,
+  values = Peak_Area_mean,
+  main = "Log(Abundance) of Compounds",
+  display_numbers = TRUE,
+  gaps_col = Treatment.1,
+  annotation_col = c("Competition?", Treatment))
+```
