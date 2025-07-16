@@ -8,7 +8,7 @@ Email me at mfoulkes@stanford.edu for questions
 Individuals who want to plot features other than those I have in the trimmed datafiles may refer to the full dataset used in the PCoA code
 
 ```{r, echo=TRUE}
-library(readcsv)
+library(read.csv)
 #install.packages("tidyverse")
 library(tidyverse)
 #install.packages("tidyheatmaps")
