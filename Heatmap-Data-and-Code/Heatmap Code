@@ -133,13 +133,24 @@ data<- data %>% mutate(Treatment_groups_edited = case_when(
   Treatment_groups == "both+DOM" ~ "Both+DOM",
   Treatment_groups == "both+host" ~ "Both+Host"))
 
+#This molecule is produced by Falsiroseomonas sp. and an interesting addition, but was not required for the final analysis
+data <- data %>% filter(row.ID != 360)
+
+custom_order <- c("Host Alone", "Falsiroseomonas sp.+Host", "Both+Host", "Curvibacter sp.+Host", "DOM Alone",
+                  "Falsiroseomonas sp.+DOM", "Both+DOM", "Curvibacter sp.+DOM")
+
+data <- data %>%
+  mutate(Treatment_groups_edited = factor(Treatment_groups_edited, levels = custom_order)) %>%
+  arrange(Treatment_groups_edited)
+
 heatmap <- tidy_heatmap(
   data,
   rows = Molecule,
   columns = Treatment_groups_edited,
   values = Peak_Area_mean,
-  main = "Log(Abundance) of Compounds",
+  main = "Abundance of Molecules Showing Changes in Bacterial Metabolism",
   display_numbers = TRUE,
   gaps_col = Treatment.1,
-  annotation_col = c("Competition?", Treatment))
+  annotation_col = c("Competition?", Treatment),
+  cluster_rows = T)
 ```
