@@ -1,11 +1,10 @@
-Copy and paste into an R Markdown File. This code contains instructions for 4 heatmaps with various uses. 
-Read the full publication Foulkes et al 2025 for Citations on packages and information on how to use these visualizationd
+Copy and paste into an R Markdown File after trimming the data to features of interest. This code contains instructions for 4 heatmaps with various uses. 
+Read the full publication Foulkes et al 2025 for Citations on packages and information on how to use these visualizations
 
 Note: Falsiroseomonas sp. was originally identified as Roseomonas sp. in the data collection phase but later reidentified in a more accurate genomic anaysis. As such, all raw data files must be edited to account for this change.
 
 Email me at mfoulkes@stanford.edu for questions
 
-Individuals who want to plot features other than those I have in the trimmed datafiles may refer to the full dataset used in the PCoA code
 
 ```{r, echo=TRUE}
 library(read.csv)
