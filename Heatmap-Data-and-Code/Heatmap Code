@@ -23,7 +23,7 @@ df<- read.csv("final_heatmap1.csv")
 df <- df[order(df$treatment),]
 df <- df %>% mutate(Treatments = case_when(
   treatment == "Innate Host Selection" ~ "Innate Host Selection",
-  treatment == "host selectivity" ~ "Host Selectivity Feedback"
+  treatment == "host selectivity" ~ "Host-Microbiome Selectivity Feedback"
 ))
 df$row.ID <- factor(df$row.ID)
 
@@ -43,13 +43,20 @@ df<- df %>% mutate(Treatment_groups_edited = case_when(
   Treatment_groups == "both+DOM" ~ "Both+DOM",
   Treatment_groups == "both+host" ~ "Both+Host"))
 
+custom_order <- c("Host Alone", "Falsiroseomonas sp.+Host", "Both+Host", "Curvibacter sp.+Host", "DOM Alone",
+                  "Falsiroseomonas sp.+DOM", "Both+DOM", "Curvibacter sp.+DOM")
+
+df <- df %>%
+  mutate(Treatment_groups_edited = factor(Treatment_groups_edited, levels = custom_order)) %>%
+  arrange(Treatment_groups_edited)
+
 tidy_heatmap(
   df,
   rows = Molecule,
   columns = Treatment_groups_edited,
   values = Peak_Area_mean,
   color_legend_n = 15,
-  main = "Log(Relative Abundance) of Random Forest Hits, Scaled per Hit",
+  main = "Relative Abundance of the Most Important Molecules per Treatment",
   scale = "row",
   gaps_col = Treatments,
   annotation_col = c(Treatments),
