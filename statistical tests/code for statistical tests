@@ -1,0 +1,65 @@
+Each test requires the dataset used in the accompanying figure
+
+  T-tests accompanying figure 1:
+Curvibacter_Host <- df %>% 
+  filter(Treatments == "H" & Bacteria == "Curvibacter sp.") %>%
+  select(Combination, Density)
+t.test(Density ~ Combination, data = Curvibacter_Host)
+Curvibacter_DOM <- df %>% 
+  filter(Treatments == "D" & Bacteria == "Curvibacter sp.") %>% 
+  select(Combination, Density)
+t.test(Density ~ Combination, data = Curvibacter_DOM)
+
+Roseomonas_Host <- df %>% 
+  filter(Treatments == "H" & Bacteria == "Roseomonas sp.") %>% 
+  select(Combination, Density)
+t.test(Density ~ Combination, data = Roseomonas_Host)
+Roseomonas_DOM <- df %>% 
+  filter(Treatments == "D" & Bacteria == "Roseomonas sp.") %>% 
+  select(Combination, Density)
+t.test(Density ~ Combination, data = Roseomonas_DOM)
+
+  PERMANOVA tests accompanying figure 2:
+###Whole Dataset
+data_t
+group_vector <- factor(c("Host", "Innate", "Host", "Host", "Host", "Host", "Host", "Host", "Host", "Host", "Host", "Innate", "Innate", "Innate", "Innate", "Innate", "Innate", "Host", "Host", "Innate", "Innate", "Innate", "Innate", "Innate"))
+
+result <- adonis2(data_t ~ group_vector, method = "euclidean", permutations = 999)
+
+print(result)
+
+###Innate host feedback
+
+pcoa_data_innate <- pcoa_data %>% select(mixed_innate1, mixed_innate2, mixed_innate3,
+                    pink_innate1, pink_innate2, pink_innate3,
+                    white_innate1, white_innate2, white_innate3,
+                    innate1, innate2, innate3)
+
+data_t <- t(pcoa_data_innate)
+
+#Scale to standardize euclidean distances
+data_t <- scale(data_t)
+
+group_vector <- factor(c("Mixed", "Mixed", "Mixed", "Falsiroseomonas", "Falsiroseomonas", "Falsiroseomonas", "Curvibacter", "Curvibacter", "Curvibacter", "Innate", "Innate", "Innate"))
+
+result <- adonis2(data_t ~ group_vector, method = "euclidean", permutations = 999)
+
+print(result)
+
+### Host-Microbiome Selectivity Feedback
+
+pcoa_data_host <- pcoa_data %>% select(mixed_host1, mixed_host2, mixed_host3,
+                    pink_host1, pink_host2, pink_host3,
+                    white_host1, white_host2, white_host3,
+                    host1, host2, host3)
+
+data_t <- t(pcoa_data_host)
+
+#Scale to standardize euclidean distances
+data_t <- scale(data_t)
+
+group_vector <- factor(c("Mixed", "Mixed", "Mixed", "Falsiroseomonas", "Falsiroseomonas", "Falsiroseomonas", "Curvibacter", "Curvibacter", "Curvibacter", "Host", "Host", "Host"))
+
+result <- adonis2(data_t ~ group_vector, method = "euclidean", permutations = 999)
+
+print(result)
