@@ -14,7 +14,7 @@ library(tidyverse)
 library(tidyheatmaps)
 ```
 
-### 1) Figure 4: Scaled log relative abundance of random forest hits
+### 1) Scaled log relative abundance of random forest hits
 
 (Note that the mean peak area refers to the mean of the log transformed data)
 
@@ -63,7 +63,7 @@ tidy_heatmap(
   cluster_rows = T)
 ```
 
-###  Supplemental Figure 1) Log relative abundance of random forest hits
+### Log relative abundance of random forest hits
 
 (Note that the mean peak area refers to the mean of the log transformed data)
 
@@ -81,7 +81,7 @@ tidy_heatmap(
   cluster_rows = T)
 ```
 
-### Supplemental Figure 2) Raw abundance heat map
+### Raw abundance heat map
 
 (This dataset can also be used for individuals interested in processing the data themselves)
 
