@@ -19,11 +19,11 @@ library(tidyheatmaps)
 (Note that the mean peak area refers to the mean of the log transformed data)
 
 ```{r}
-df<- read.csv("final_heatmap1.csv")
+df<- read.csv("randomforest_heatmap_data.csv")
 df <- df[order(df$treatment),]
 df <- df %>% mutate(Treatments = case_when(
   treatment == "Innate Host Selection" ~ "Innate Host Selection",
-  treatment == "host selectivity" ~ "Host-Microbiome Selectivity Feedback"
+  treatment == "Host-Microbiome Feedback" ~ "Host-Microbiome Feedback"
 ))
 df$row.ID <- factor(df$row.ID)
 
@@ -109,10 +109,11 @@ tidy_heatmap(
   main = "Relative Abundance of Random Forest Hits, No Transformation")
 ```
 
-### Figure 5) Log abundance of molecules indicating bacterial metabolic changes. The data is already transformed
+### Figure 4) Log abundance of molecules indicating bacterial metabolic changes. The data is already transformed
+
 
 ```{r}
-data <- read.csv("bacteria_heatmaps2.csv")
+data <- read.csv("competition_exometabolites.csv")
 data <- data[order(data$Treatment.1),]
 data$Treatment <- data$Treatment.1
 data$"Competition?" <- data$Competition.
@@ -145,12 +146,15 @@ data <- data %>%
 
 heatmap <- tidy_heatmap(
   data,
-  rows = Molecule,
+  rows = Molecular.Classification,
   columns = Treatment_groups_edited,
   values = Peak_Area_mean,
-  main = "Abundance of Molecules Showing Changes in Bacterial Metabolism",
+  main = "Log Abundance of Molecules Showing Changes in Bacterial Metabolism",
   display_numbers = TRUE,
   gaps_col = Treatment.1,
   annotation_col = c("Competition?", Treatment),
   cluster_rows = T)
+
+
+
 ```
