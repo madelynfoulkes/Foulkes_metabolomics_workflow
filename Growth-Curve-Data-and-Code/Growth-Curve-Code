@@ -8,7 +8,7 @@ Note: Falsiroseomonas sp. was originally identified as Roseomonas sp. in the dat
 
 ### 1) Make the Visual
 
-The pre-processed data for this section, as described in the main figure, is available in Yang 2024 [dissertation] & Yang & Denef 2025 (Unpublished)
+The pre-processed data for this section, as described in the main figure, is available in Yang 2024 [dissertation] & Yang & Denef 2025 
 
 ```{r, echo=TRUE}
 library(readxl)
@@ -51,6 +51,50 @@ data %>%
     legend.text = element_text(size = 10), 
     strip.text = element_text(size = 12)) +
   scale_color_manual(values = c( "purple", "pink"))+
+  theme(strip.text.y = element_blank())
+
+```
+
+
+```{r, echo=TRUE}
+library(readxl)
+#install.packages("tidyverse")
+library(tidyverse)
+
+ df <- read_excel("/Users/maddyfoulkes/Downloads/ForMaddy_20250624_JY/GrowthCurve/IsolateCount_Day0_22.xlsx")
+ df$Density <- as.numeric(df$Density)
+ df$Density <- log(df$Density)
+df<- df %>% mutate(`Bacteria Species` = case_when(
+  Bacteria == "Roseomonas sp." ~ "Falsiroseomonas sp.",
+  Bacteria == "Curvibacter sp." ~ "Curvibacter sp."))
+
+df <- df[!is.na(df$Density), ]
+data <- df %>% group_by(Combination, Treatments, Day, `Bacteria Species`) %>% 
+  mutate(mean_density= mean(Density)) %>% mutate(sd_density= sd(Density)) %>% 
+  mutate_all(~replace(., is.na(.), 0)) %>% ungroup() %>%
+  select(Combination, Treatments, Day, `Bacteria Species`, mean_density, 
+         sd_density, Density)
+  
+data <- data %>% mutate( Treatment = case_when(
+  Treatments== "H" ~ "Host-Microbiome Feedback",
+  Treatments== "D" ~ "Innate Host Selection"))
+
+data$Combination <- factor(data$Combination, levels = c("XPA", "26D3", "Mix"))
+data %>%
+  ggplot(aes(x = Day, y = mean_density, color = `Bacteria Species`, group = `Bacteria Species`)) + 
+  geom_point() +geom_line() +
+  geom_errorbar(aes(
+    ymin = mean_density - sd_density, ymax = mean_density + sd_density), 
+    width = 0.7) +
+        title = "Average Growth of Bacterial Species Over Time", 
+        color = "Bacteria Species") +
+  facet_grid(Combination ~ Treatment) + theme_minimal() +
+  theme(plot.title = element_text(size = 16, face = "bold"), 
+        axis.title = element_text(size = 11), 
+        legend.title = element_text(size = 10),
+    legend.text = element_text(size = 10), 
+    strip.text = element_text(size = 12)) +
+  scale_color_manual(values = c( "#C44E52", "#4C72B0"))+
   theme(strip.text.y = element_blank())
 
 ```
