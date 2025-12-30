@@ -1,0 +1,201 @@
+row.ID,Molecule,ClassyFire,Treatment,Treatment_groups,log_peak,Peak_Area_mean,treatment,Bacteria,Control
+669,No ID 669,669 No ClassyFire ID,pink_host,Roseomonas+host,13.501033,13.335705,Host-Microbiome Feedback,roseomonas,No
+602,Theanine,602 Alpha amino acids*,pink_host,Roseomonas+host,7.157288,6.060232,Host-Microbiome Feedback,roseomonas,No
+571,Acetyllysine,571 N-acyl-alpha amino acids*,pink_host,Roseomonas+host,9.901159,9.924496,Host-Microbiome Feedback,roseomonas,No
+558,Methylglutarate,558 Amino acids*,pink_host,Roseomonas+host,15.358723,15.307282,Host-Microbiome Feedback,roseomonas,No
+437,No ID 437,437 N-acyl-alpha amino acids*,pink_host,Roseomonas+host,11.889474,11.98082,Host-Microbiome Feedback,roseomonas,No
+435,No ID 435,435 Purines and purine derivatives*,pink_host,Roseomonas+host,13.757791,13.672484,Host-Microbiome Feedback,roseomonas,No
+417,Ile-Leu,417 Dipeptides*,pink_host,Roseomonas+host,7.781183,7.616744,Host-Microbiome Feedback,roseomonas,No
+399,No ID 399,399 Alpha amino acid esters*,pink_host,Roseomonas+host,12.987432,12.729259,Host-Microbiome Feedback,roseomonas,No
+358,No ID 358,358 No ClassyFire ID,pink_host,Roseomonas+host,13.732797,13.795745,Host-Microbiome Feedback,roseomonas,No
+356,No ID 356,356 No ClassyFire ID,pink_host,Roseomonas+host,13.349197,13.412074,Host-Microbiome Feedback,roseomonas,No
+342,No ID 342,342 Dialkylamines*,pink_host,Roseomonas+host,11.84197,12.184651,Host-Microbiome Feedback,roseomonas,No
+317,No ID 317,317 No ClassyFire ID,pink_host,Roseomonas+host,9.905574,9.575469,Host-Microbiome Feedback,roseomonas,No
+275,No ID 275,275 Indoles*,pink_host,Roseomonas+host,8.804714,8.773983,Host-Microbiome Feedback,roseomonas,No
+270,Acyl-Tryptamine,270 Secondary carboxylic acid amides*,pink_host,Roseomonas+host,14.810244,14.850793,Host-Microbiome Feedback,roseomonas,No
+261,Dyphylline,261 Hybrid peptides*,pink_host,Roseomonas+host,10.996259,13.009494,Host-Microbiome Feedback,roseomonas,No
+260,No ID 260,260 Amino acids and derivatives*,pink_host,Roseomonas+host,12.632001,12.697309,Host-Microbiome Feedback,roseomonas,No
+226,No ID 226,226 6-aminopurines*,pink_host,Roseomonas+host,12.505778,12.56647,Host-Microbiome Feedback,roseomonas,No
+221,No ID 221,221 Aryl-aldehydes,pink_host,Roseomonas+host,11.067682,10.863492,Host-Microbiome Feedback,roseomonas,No
+217,No ID 217,217 6-aminopurines*,pink_host,Roseomonas+host,12.804435,12.749621,Host-Microbiome Feedback,roseomonas,No
+209,Juglomycin F,209 Acetamides*,pink_host,Roseomonas+host,10.364228,10.307173,Host-Microbiome Feedback,roseomonas,No
+134,No ID 134,134 Dialkyl ethers,pink_host,Roseomonas+host,9.325227,11.757598,Host-Microbiome Feedback,roseomonas,No
+121,No ID 121,121 Guanidines*,pink_host,Roseomonas+host,8.344424,8.302626,Host-Microbiome Feedback,roseomonas,No
+116,No ID 116,116 N-aliphatic s-triazines*,pink_host,Roseomonas+host,8.531504,8.350075,Host-Microbiome Feedback,roseomonas,No
+87,No ID 87,87 Polyethylene glycols,pink_host,Roseomonas+host,8.548847,9.121938,Host-Microbiome Feedback,roseomonas,No
+62,No ID 62,62 No ClassyFire ID,pink_host,Roseomonas+host,12.675027,12.54794,Host-Microbiome Feedback,roseomonas,No
+669,No ID 669,669 No ClassyFire ID,pink_innate,Roseomonas+DOM,13.344236,13.404729,Innate Host Selection,roseomonas,No
+602,Theanine,602 Alpha amino acids*,pink_innate,Roseomonas+DOM,12.65053,12.577756,Innate Host Selection,roseomonas,No
+571,Acetyllysine,571 N-acyl-alpha amino acids*,pink_innate,Roseomonas+DOM,8.626878,8.718567,Innate Host Selection,roseomonas,No
+558,Methylglutarate,558 Amino acids*,pink_innate,Roseomonas+DOM,13.484669,13.695008,Innate Host Selection,roseomonas,No
+437,No ID 437,437 N-acyl-alpha amino acids*,pink_innate,Roseomonas+DOM,9.935925,10.476816,Innate Host Selection,roseomonas,No
+435,No ID 435,435 Purines and purine derivatives*,pink_innate,Roseomonas+DOM,13.712691,13.849348,Innate Host Selection,roseomonas,No
+417,Ile-Leu,417 Dipeptides*,pink_innate,Roseomonas+DOM,0,0,Innate Host Selection,roseomonas,No
+399,No ID 399,399 Alpha amino acid esters*,pink_innate,Roseomonas+DOM,12.379432,12.657076,Innate Host Selection,roseomonas,No
+358,No ID 358,358 No ClassyFire ID,pink_innate,Roseomonas+DOM,13.517952,13.61511,Innate Host Selection,roseomonas,No
+356,No ID 356,356 No ClassyFire ID,pink_innate,Roseomonas+DOM,13.155279,13.244122,Innate Host Selection,roseomonas,No
+342,No ID 342,342 Dialkylamines*,pink_innate,Roseomonas+DOM,10.492265,10.583682,Innate Host Selection,roseomonas,No
+317,No ID 317,317 No ClassyFire ID,pink_innate,Roseomonas+DOM,11.378369,11.40266,Innate Host Selection,roseomonas,No
+275,No ID 275,275 Indoles*,pink_innate,Roseomonas+DOM,0,0,Innate Host Selection,roseomonas,No
+270,Acyl-Tryptamine,270 Secondary carboxylic acid amides*,pink_innate,Roseomonas+DOM,13.346427,13.427872,Innate Host Selection,roseomonas,No
+261,Dyphylline,261 Hybrid peptides*,pink_innate,Roseomonas+DOM,14.087757,14.385952,Innate Host Selection,roseomonas,No
+260,No ID 260,260 Amino acids and derivatives*,pink_innate,Roseomonas+DOM,13.095487,12.943767,Innate Host Selection,roseomonas,No
+226,No ID 226,226 6-aminopurines*,pink_innate,Roseomonas+DOM,12.023818,12.041666,Innate Host Selection,roseomonas,No
+221,No ID 221,221 Aryl-aldehydes,pink_innate,Roseomonas+DOM,10.524331,10.763421,Innate Host Selection,roseomonas,No
+217,No ID 217,217 6-aminopurines*,pink_innate,Roseomonas+DOM,12.100323,12.222552,Innate Host Selection,roseomonas,No
+209,Juglomycin F,209 Acetamides*,pink_innate,Roseomonas+DOM,10.855189,10.87521,Innate Host Selection,roseomonas,No
+134,No ID 134,134 Dialkyl ethers,pink_innate,Roseomonas+DOM,8.04623,10.957565,Innate Host Selection,roseomonas,No
+121,No ID 121,121 Guanidines*,pink_innate,Roseomonas+DOM,11.949252,11.459505,Innate Host Selection,roseomonas,No
+116,No ID 116,116 N-aliphatic s-triazines*,pink_innate,Roseomonas+DOM,13.138308,13.142358,Innate Host Selection,roseomonas,No
+87,No ID 87,87 Polyethylene glycols,pink_innate,Roseomonas+DOM,13.651266,13.865104,Innate Host Selection,roseomonas,No
+62,No ID 62,62 No ClassyFire ID,pink_innate,Roseomonas+DOM,7.579299,10.104482,Innate Host Selection,roseomonas,No
+669,No ID 669,669 No ClassyFire ID,host,host alone,13.353501,13.377187,Host-Microbiome Feedback,control,Yes
+602,Theanine,602 Alpha amino acids*,host,host alone,13.39773,13.524252,Host-Microbiome Feedback,control,Yes
+571,Acetyllysine,571 N-acyl-alpha amino acids*,host,host alone,12.715286,12.871708,Host-Microbiome Feedback,control,Yes
+558,Methylglutarate,558 Amino acids*,host,host alone,9.784255,10.827842,Host-Microbiome Feedback,control,Yes
+437,No ID 437,437 N-acyl-alpha amino acids*,host,host alone,11.720915,11.944612,Host-Microbiome Feedback,control,Yes
+435,No ID 435,435 Purines and purine derivatives*,host,host alone,13.763433,13.876287,Host-Microbiome Feedback,control,Yes
+417,Ile-Leu,417 Dipeptides*,host,host alone,13.62145,13.752603,Host-Microbiome Feedback,control,Yes
+399,No ID 399,399 Alpha amino acid esters*,host,host alone,14.956523,15.124839,Host-Microbiome Feedback,control,Yes
+358,No ID 358,358 No ClassyFire ID,host,host alone,14.676715,14.754576,Host-Microbiome Feedback,control,Yes
+356,No ID 356,356 No ClassyFire ID,host,host alone,14.344259,14.419708,Host-Microbiome Feedback,control,Yes
+342,No ID 342,342 Dialkylamines*,host,host alone,8.634292,9.451757,Host-Microbiome Feedback,control,Yes
+317,No ID 317,317 No ClassyFire ID,host,host alone,10.877336,11.873877,Host-Microbiome Feedback,control,Yes
+275,No ID 275,275 Indoles*,host,host alone,11.802994,12.258168,Host-Microbiome Feedback,control,Yes
+270,Acyl-Tryptamine,270 Secondary carboxylic acid amides*,host,host alone,13.58498,13.820298,Host-Microbiome Feedback,control,Yes
+261,Dyphylline,261 Hybrid peptides*,host,host alone,13.680226,13.253043,Host-Microbiome Feedback,control,Yes
+260,No ID 260,260 Amino acids and derivatives*,host,host alone,13.585554,13.635887,Host-Microbiome Feedback,control,Yes
+226,No ID 226,226 6-aminopurines*,host,host alone,12.679469,12.691124,Host-Microbiome Feedback,control,Yes
+221,No ID 221,221 Aryl-aldehydes,host,host alone,13.392581,13.297421,Host-Microbiome Feedback,control,Yes
+217,No ID 217,217 6-aminopurines*,host,host alone,12.001346,11.760409,Host-Microbiome Feedback,control,Yes
+209,Juglomycin F,209 Acetamides*,host,host alone,13.578192,12.959817,Host-Microbiome Feedback,control,Yes
+134,No ID 134,134 Dialkyl ethers,host,host alone,7.957815,11.305272,Host-Microbiome Feedback,control,Yes
+121,No ID 121,121 Guanidines*,host,host alone,11.459584,11.086292,Host-Microbiome Feedback,control,Yes
+116,No ID 116,116 N-aliphatic s-triazines*,host,host alone,12.548709,12.135154,Host-Microbiome Feedback,control,Yes
+87,No ID 87,87 Polyethylene glycols,host,host alone,13.480116,13.1888,Host-Microbiome Feedback,control,Yes
+62,No ID 62,62 No ClassyFire ID,host,host alone,8.272898,10.198914,Host-Microbiome Feedback,control,Yes
+669,No ID 669,669 No ClassyFire ID,innate,DOM alone,13.629008,13.417329,Innate Host Selection,control,Yes
+602,Theanine,602 Alpha amino acids*,innate,DOM alone,13.397331,13.140746,Innate Host Selection,control,Yes
+571,Acetyllysine,571 N-acyl-alpha amino acids*,innate,DOM alone,13.421986,13.103504,Innate Host Selection,control,Yes
+558,Methylglutarate,558 Amino acids*,innate,DOM alone,11.514731,11.514335,Innate Host Selection,control,Yes
+437,No ID 437,437 N-acyl-alpha amino acids*,innate,DOM alone,12.070324,11.869697,Innate Host Selection,control,Yes
+435,No ID 435,435 Purines and purine derivatives*,innate,DOM alone,14.11837,13.961796,Innate Host Selection,control,Yes
+417,Ile-Leu,417 Dipeptides*,innate,DOM alone,14.109734,13.977787,Innate Host Selection,control,Yes
+399,No ID 399,399 Alpha amino acid esters*,innate,DOM alone,11.297176,13.689743,Innate Host Selection,control,Yes
+358,No ID 358,358 No ClassyFire ID,innate,DOM alone,14.666898,14.590037,Innate Host Selection,control,Yes
+356,No ID 356,356 No ClassyFire ID,innate,DOM alone,14.322856,14.244278,Innate Host Selection,control,Yes
+342,No ID 342,342 Dialkylamines*,innate,DOM alone,9.067254,8.868282,Innate Host Selection,control,Yes
+317,No ID 317,317 No ClassyFire ID,innate,DOM alone,10.618635,11.465548,Innate Host Selection,control,Yes
+275,No ID 275,275 Indoles*,innate,DOM alone,12.125265,11.784596,Innate Host Selection,control,Yes
+270,Acyl-Tryptamine,270 Secondary carboxylic acid amides*,innate,DOM alone,13.452192,13.402315,Innate Host Selection,control,Yes
+261,Dyphylline,261 Hybrid peptides*,innate,DOM alone,15.081332,14.549116,Innate Host Selection,control,Yes
+260,No ID 260,260 Amino acids and derivatives*,innate,DOM alone,13.267684,13.189498,Innate Host Selection,control,Yes
+226,No ID 226,226 6-aminopurines*,innate,DOM alone,11.734421,11.877169,Innate Host Selection,control,Yes
+221,No ID 221,221 Aryl-aldehydes,innate,DOM alone,12.861677,12.7686,Innate Host Selection,control,Yes
+217,No ID 217,217 6-aminopurines*,innate,DOM alone,11.459092,11.434701,Innate Host Selection,control,Yes
+209,Juglomycin F,209 Acetamides*,innate,DOM alone,11.081201,11.061884,Innate Host Selection,control,Yes
+134,No ID 134,134 Dialkyl ethers,innate,DOM alone,12.002016,12.05474,Innate Host Selection,control,Yes
+121,No ID 121,121 Guanidines*,innate,DOM alone,12.248599,12.244158,Innate Host Selection,control,Yes
+116,No ID 116,116 N-aliphatic s-triazines*,innate,DOM alone,12.839208,12.900907,Innate Host Selection,control,Yes
+87,No ID 87,87 Polyethylene glycols,innate,DOM alone,13.921872,13.906186,Innate Host Selection,control,Yes
+62,No ID 62,62 No ClassyFire ID,innate,DOM alone,10.095448,10.491068,Innate Host Selection,control,Yes
+669,No ID 669,669 No ClassyFire ID,white_host,Curvibacter+host,12.968101,13.206763,Host-Microbiome Feedback,curvibacter,No
+602,Theanine,602 Alpha amino acids*,white_host,Curvibacter+host,12.827373,13.161462,Host-Microbiome Feedback,curvibacter,No
+571,Acetyllysine,571 N-acyl-alpha amino acids*,white_host,Curvibacter+host,12.124335,12.246,Host-Microbiome Feedback,curvibacter,No
+558,Methylglutarate,558 Amino acids*,white_host,Curvibacter+host,12.988644,12.346571,Host-Microbiome Feedback,curvibacter,No
+437,No ID 437,437 N-acyl-alpha amino acids*,white_host,Curvibacter+host,12.529815,12.733194,Host-Microbiome Feedback,curvibacter,No
+435,No ID 435,435 Purines and purine derivatives*,white_host,Curvibacter+host,13.593227,13.777196,Host-Microbiome Feedback,curvibacter,No
+417,Ile-Leu,417 Dipeptides*,white_host,Curvibacter+host,13.416911,13.482962,Host-Microbiome Feedback,curvibacter,No
+399,No ID 399,399 Alpha amino acid esters*,white_host,Curvibacter+host,14.725018,14.9369,Host-Microbiome Feedback,curvibacter,No
+358,No ID 358,358 No ClassyFire ID,white_host,Curvibacter+host,14.853913,14.975891,Host-Microbiome Feedback,curvibacter,No
+356,No ID 356,356 No ClassyFire ID,white_host,Curvibacter+host,14.550556,14.677057,Host-Microbiome Feedback,curvibacter,No
+342,No ID 342,342 Dialkylamines*,white_host,Curvibacter+host,0,11.489863,Host-Microbiome Feedback,curvibacter,No
+317,No ID 317,317 No ClassyFire ID,white_host,Curvibacter+host,10.610885,12.196172,Host-Microbiome Feedback,curvibacter,No
+275,No ID 275,275 Indoles*,white_host,Curvibacter+host,10.290319,11.209071,Host-Microbiome Feedback,curvibacter,No
+270,Acyl-Tryptamine,270 Secondary carboxylic acid amides*,white_host,Curvibacter+host,13.774708,13.995009,Host-Microbiome Feedback,curvibacter,No
+261,Dyphylline,261 Hybrid peptides*,white_host,Curvibacter+host,13.698901,13.739059,Host-Microbiome Feedback,curvibacter,No
+260,No ID 260,260 Amino acids and derivatives*,white_host,Curvibacter+host,13.486573,13.60539,Host-Microbiome Feedback,curvibacter,No
+226,No ID 226,226 6-aminopurines*,white_host,Curvibacter+host,12.772095,12.555905,Host-Microbiome Feedback,curvibacter,No
+221,No ID 221,221 Aryl-aldehydes,white_host,Curvibacter+host,12.469061,12.107955,Host-Microbiome Feedback,curvibacter,No
+217,No ID 217,217 6-aminopurines*,white_host,Curvibacter+host,11.766063,12.151822,Host-Microbiome Feedback,curvibacter,No
+209,Juglomycin F,209 Acetamides*,white_host,Curvibacter+host,11.157428,11.645142,Host-Microbiome Feedback,curvibacter,No
+134,No ID 134,134 Dialkyl ethers,white_host,Curvibacter+host,12.215783,12.468218,Host-Microbiome Feedback,curvibacter,No
+121,No ID 121,121 Guanidines*,white_host,Curvibacter+host,8.040825,10.684317,Host-Microbiome Feedback,curvibacter,No
+116,No ID 116,116 N-aliphatic s-triazines*,white_host,Curvibacter+host,8.313244,11.390394,Host-Microbiome Feedback,curvibacter,No
+87,No ID 87,87 Polyethylene glycols,white_host,Curvibacter+host,7.564391,12.479722,Host-Microbiome Feedback,curvibacter,No
+62,No ID 62,62 No ClassyFire ID,white_host,Curvibacter+host,11.569992,11.429313,Host-Microbiome Feedback,curvibacter,No
+669,No ID 669,669 No ClassyFire ID,white_innate,Curvibacter+DOM,13.079751,13.157448,Innate Host Selection,curvibacter,No
+602,Theanine,602 Alpha amino acids*,white_innate,Curvibacter+DOM,12.803874,12.878341,Innate Host Selection,curvibacter,No
+571,Acetyllysine,571 N-acyl-alpha amino acids*,white_innate,Curvibacter+DOM,9.104084,9.284427,Innate Host Selection,curvibacter,No
+558,Methylglutarate,558 Amino acids*,white_innate,Curvibacter+DOM,11.753783,11.733541,Innate Host Selection,curvibacter,No
+437,No ID 437,437 N-acyl-alpha amino acids*,white_innate,Curvibacter+DOM,12.56234,12.609801,Innate Host Selection,curvibacter,No
+435,No ID 435,435 Purines and purine derivatives*,white_innate,Curvibacter+DOM,13.734103,13.772521,Innate Host Selection,curvibacter,No
+417,Ile-Leu,417 Dipeptides*,white_innate,Curvibacter+DOM,13.675385,13.695682,Innate Host Selection,curvibacter,No
+399,No ID 399,399 Alpha amino acid esters*,white_innate,Curvibacter+DOM,12.432882,12.355274,Innate Host Selection,curvibacter,No
+358,No ID 358,358 No ClassyFire ID,white_innate,Curvibacter+DOM,14.284553,14.298927,Innate Host Selection,curvibacter,No
+356,No ID 356,356 No ClassyFire ID,white_innate,Curvibacter+DOM,13.954775,13.971313,Innate Host Selection,curvibacter,No
+342,No ID 342,342 Dialkylamines*,white_innate,Curvibacter+DOM,9.123471,10.774825,Innate Host Selection,curvibacter,No
+317,No ID 317,317 No ClassyFire ID,white_innate,Curvibacter+DOM,12.00486,11.738707,Innate Host Selection,curvibacter,No
+275,No ID 275,275 Indoles*,white_innate,Curvibacter+DOM,10.064467,9.774719,Innate Host Selection,curvibacter,No
+270,Acyl-Tryptamine,270 Secondary carboxylic acid amides*,white_innate,Curvibacter+DOM,13.151481,13.205041,Innate Host Selection,curvibacter,No
+261,Dyphylline,261 Hybrid peptides*,white_innate,Curvibacter+DOM,13.401179,13.836278,Innate Host Selection,curvibacter,No
+260,No ID 260,260 Amino acids and derivatives*,white_innate,Curvibacter+DOM,13.030276,13.077812,Innate Host Selection,curvibacter,No
+226,No ID 226,226 6-aminopurines*,white_innate,Curvibacter+DOM,11.74588,11.794666,Innate Host Selection,curvibacter,No
+221,No ID 221,221 Aryl-aldehydes,white_innate,Curvibacter+DOM,10.104295,10.071984,Innate Host Selection,curvibacter,No
+217,No ID 217,217 6-aminopurines*,white_innate,Curvibacter+DOM,11.940572,12.432105,Innate Host Selection,curvibacter,No
+209,Juglomycin F,209 Acetamides*,white_innate,Curvibacter+DOM,10.836218,10.792851,Innate Host Selection,curvibacter,No
+134,No ID 134,134 Dialkyl ethers,white_innate,Curvibacter+DOM,12.324684,11.379728,Innate Host Selection,curvibacter,No
+121,No ID 121,121 Guanidines*,white_innate,Curvibacter+DOM,9.129187,10.572696,Innate Host Selection,curvibacter,No
+116,No ID 116,116 N-aliphatic s-triazines*,white_innate,Curvibacter+DOM,10.240037,11.407822,Innate Host Selection,curvibacter,No
+87,No ID 87,87 Polyethylene glycols,white_innate,Curvibacter+DOM,8.81143,12.371738,Innate Host Selection,curvibacter,No
+62,No ID 62,62 No ClassyFire ID,white_innate,Curvibacter+DOM,12.129962,11.741742,Innate Host Selection,curvibacter,No
+669,No ID 669,669 No ClassyFire ID,mixed_host,both+host,13.564755,13.518012,Host-Microbiome Feedback,mixed,No
+602,Theanine,602 Alpha amino acids*,mixed_host,both+host,8.735169,8.34396,Host-Microbiome Feedback,mixed,No
+571,Acetyllysine,571 N-acyl-alpha amino acids*,mixed_host,both+host,9.406616,9.807567,Host-Microbiome Feedback,mixed,No
+558,Methylglutarate,558 Amino acids*,mixed_host,both+host,15.32126,15.448828,Host-Microbiome Feedback,mixed,No
+437,No ID 437,437 N-acyl-alpha amino acids*,mixed_host,both+host,11.737867,11.87895,Host-Microbiome Feedback,mixed,No
+435,No ID 435,435 Purines and purine derivatives*,mixed_host,both+host,13.693014,13.895176,Host-Microbiome Feedback,mixed,No
+417,Ile-Leu,417 Dipeptides*,mixed_host,both+host,9.083424,8.581511,Host-Microbiome Feedback,mixed,No
+399,No ID 399,399 Alpha amino acid esters*,mixed_host,both+host,13.10161,13.014623,Host-Microbiome Feedback,mixed,No
+358,No ID 358,358 No ClassyFire ID,mixed_host,both+host,14.127487,14.203962,Host-Microbiome Feedback,mixed,No
+356,No ID 356,356 No ClassyFire ID,mixed_host,both+host,13.750163,13.846632,Host-Microbiome Feedback,mixed,No
+342,No ID 342,342 Dialkylamines*,mixed_host,both+host,11.528815,12.225601,Host-Microbiome Feedback,mixed,No
+317,No ID 317,317 No ClassyFire ID,mixed_host,both+host,10.984414,10.573543,Host-Microbiome Feedback,mixed,No
+275,No ID 275,275 Indoles*,mixed_host,both+host,9.286044,9.225617,Host-Microbiome Feedback,mixed,No
+270,Acyl-Tryptamine,270 Secondary carboxylic acid amides*,mixed_host,both+host,14.543673,14.813243,Host-Microbiome Feedback,mixed,No
+261,Dyphylline,261 Hybrid peptides*,mixed_host,both+host,13.078211,13.940653,Host-Microbiome Feedback,mixed,No
+260,No ID 260,260 Amino acids and derivatives*,mixed_host,both+host,12.531672,12.92883,Host-Microbiome Feedback,mixed,No
+226,No ID 226,226 6-aminopurines*,mixed_host,both+host,12.333642,12.579872,Host-Microbiome Feedback,mixed,No
+221,No ID 221,221 Aryl-aldehydes,mixed_host,both+host,11.949598,11.537246,Host-Microbiome Feedback,mixed,No
+217,No ID 217,217 6-aminopurines*,mixed_host,both+host,12.726872,12.975941,Host-Microbiome Feedback,mixed,No
+209,Juglomycin F,209 Acetamides*,mixed_host,both+host,10.398515,10.52155,Host-Microbiome Feedback,mixed,No
+134,No ID 134,134 Dialkyl ethers,mixed_host,both+host,11.127403,11.703592,Host-Microbiome Feedback,mixed,No
+121,No ID 121,121 Guanidines*,mixed_host,both+host,12.24129,11.196432,Host-Microbiome Feedback,mixed,No
+116,No ID 116,116 N-aliphatic s-triazines*,mixed_host,both+host,12.889568,11.818473,Host-Microbiome Feedback,mixed,No
+87,No ID 87,87 Polyethylene glycols,mixed_host,both+host,13.954288,12.871623,Host-Microbiome Feedback,mixed,No
+62,No ID 62,62 No ClassyFire ID,mixed_host,both+host,10.338247,11.345751,Host-Microbiome Feedback,mixed,No
+669,No ID 669,669 No ClassyFire ID,mixed_innate,both+DOM,13.630431,13.497316,Innate Host Selection,mixed,No
+602,Theanine,602 Alpha amino acids*,mixed_innate,both+DOM,13.539256,13.394465,Innate Host Selection,mixed,No
+571,Acetyllysine,571 N-acyl-alpha amino acids*,mixed_innate,both+DOM,9.614507,9.599388,Innate Host Selection,mixed,No
+558,Methylglutarate,558 Amino acids*,mixed_innate,both+DOM,12.887497,12.759043,Innate Host Selection,mixed,No
+437,No ID 437,437 N-acyl-alpha amino acids*,mixed_innate,both+DOM,12.306506,12.363972,Innate Host Selection,mixed,No
+435,No ID 435,435 Purines and purine derivatives*,mixed_innate,both+DOM,14.249665,14.129166,Innate Host Selection,mixed,No
+417,Ile-Leu,417 Dipeptides*,mixed_innate,both+DOM,0,7.202732,Innate Host Selection,mixed,No
+399,No ID 399,399 Alpha amino acid esters*,mixed_innate,both+DOM,13.561429,13.341669,Innate Host Selection,mixed,No
+358,No ID 358,358 No ClassyFire ID,mixed_innate,both+DOM,14.506197,14.197122,Innate Host Selection,mixed,No
+356,No ID 356,356 No ClassyFire ID,mixed_innate,both+DOM,14.181674,13.858752,Innate Host Selection,mixed,No
+342,No ID 342,342 Dialkylamines*,mixed_innate,both+DOM,12.316029,12.232091,Innate Host Selection,mixed,No
+317,No ID 317,317 No ClassyFire ID,mixed_innate,both+DOM,11.525888,11.436505,Innate Host Selection,mixed,No
+275,No ID 275,275 Indoles*,mixed_innate,both+DOM,0,0,Innate Host Selection,mixed,No
+270,Acyl-Tryptamine,270 Secondary carboxylic acid amides*,mixed_innate,both+DOM,13.610383,13.43644,Innate Host Selection,mixed,No
+261,Dyphylline,261 Hybrid peptides*,mixed_innate,both+DOM,13.386558,13.375146,Innate Host Selection,mixed,No
+260,No ID 260,260 Amino acids and derivatives*,mixed_innate,both+DOM,13.372475,13.22042,Innate Host Selection,mixed,No
+226,No ID 226,226 6-aminopurines*,mixed_innate,both+DOM,12.035728,11.695772,Innate Host Selection,mixed,No
+221,No ID 221,221 Aryl-aldehydes,mixed_innate,both+DOM,10.194976,10.256646,Innate Host Selection,mixed,No
+217,No ID 217,217 6-aminopurines*,mixed_innate,both+DOM,13.006588,12.670857,Innate Host Selection,mixed,No
+209,Juglomycin F,209 Acetamides*,mixed_innate,both+DOM,11.248063,11.136232,Innate Host Selection,mixed,No
+134,No ID 134,134 Dialkyl ethers,mixed_innate,both+DOM,7.847578,10.552357,Innate Host Selection,mixed,No
+121,No ID 121,121 Guanidines*,mixed_innate,both+DOM,9.837754,9.785481,Innate Host Selection,mixed,No
+116,No ID 116,116 N-aliphatic s-triazines*,mixed_innate,both+DOM,10.973898,10.578833,Innate Host Selection,mixed,No
+87,No ID 87,87 Polyethylene glycols,mixed_innate,both+DOM,8.26955,8.337431,Innate Host Selection,mixed,No
+62,No ID 62,62 No ClassyFire ID,mixed_innate,both+DOM,10.873633,11.37156,Innate Host Selection,mixed,No
